@@ -18,8 +18,7 @@ public class MessageListener {
     public void listener(OrderPlacedMessage orderPlacedMessage) {
         log.info("New Order with Order Number: {} has been placed", orderPlacedMessage.getOrderNumber());
 
-
-        String restaurantEmail = "markus@example.com";
+        String restaurantEmail = "markus@gmail.com";
         String subject = "New Order Placed";
         String body = "A new order has been placed. Order Number: " + orderPlacedMessage.getOrderNumber();
 
